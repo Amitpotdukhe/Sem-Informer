@@ -1,0 +1,28 @@
+<%- include("../partials/classes-header.ejs"); -%>
+    <div class="main_content">
+
+        <div class="container">
+          <div class="header">
+              <h3>Assignments</h3>
+          </div>
+            <div class="info">
+                <div>
+                    <div class="container-fluid">
+                        <div>
+                        <% items.forEach(item=>{ %>
+                            <h2 style="color:RGB(15, 17, 138)">
+                               <a href="/viewSingleAssignment/<%=item._id%>"> Subject:
+                                 <%= item.name %></a>
+                            </h2>
+                            <h4>
+                                Description:
+                                <%= item.desc %>
+                            </h4>
+                            <hr>
+                            <% }) %>
+                        </div>
+                    </div>
+
+
+
+<%- include("../partials/classes-footer.ejs"); -%>

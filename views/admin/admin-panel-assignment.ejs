@@ -1,0 +1,25 @@
+<%- include("../partials/admin-header.ejs"); -%>
+    <h3>Upload Assignment--</h3>
+    <div class="container">
+        <form action="/admin-assign-assignment" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" value="" name="name" required>
+            </div>
+            <div>
+                <label for="desc"> Description</label>
+                <textarea id="desc" class="form-control" name="desc" value="" rows="2" placeholder="Description" required>
+				</textarea>
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Select File</label>
+                <input id="image" name="image" class="form-control" type="file" id="formFile">
+            </div>
+            <div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+<%- include("../partials/admin-footer.ejs"); -%>

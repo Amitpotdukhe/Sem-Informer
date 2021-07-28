@@ -1,0 +1,35 @@
+<%- include("../partials/classes-header.ejs"); -%>
+    <div class="main_content">
+        <div class="header">
+            <h1>Assignments</h1>
+        </div>
+        <div class="container">
+            <div class="info">
+                <div>
+                    <div class="container-fluid">
+                        <div>
+                            <h2 style="color:RGB(15, 17, 138)">
+                                Subject:
+                                 <%= items.name %>
+                            </h2>
+                            <h4>
+                                Description:
+                                <%= items.desc %>
+                            </h4>
+                        </div> 
+                    </div>
+    <img style="height:32rem;max-width:70rem" src="data:items/<%=items.img.contentType%>;base64,
+                                          <%=items.img.data.toString('base64')%>">
+                                          <hr>
+                        </div> 
+                    </div>
+            <form method="GET" action="/submitAssn/<%=items._id%>">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-dark" type="submit">Download</button>
+                            <button class="btn btn-success" type="submit">Submit</button>
+                        </div>
+                    </form>        
+                    
+                    
+
+<%- include("../partials/classes-footer.ejs"); -%>

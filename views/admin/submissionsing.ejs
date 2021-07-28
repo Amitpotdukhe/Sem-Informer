@@ -1,0 +1,24 @@
+<%- include("../partials/admin-header.ejs"); -%>
+<div class="container">
+  <h3>Submissions:</h3>
+    <div class="row">
+    
+      <div class="col-md-8">
+        <% items.submission.forEach(sub=>{ %>
+          <h3>Name: <%= sub.name %></h3>
+          <p>Roll.No: <%= sub.rollno %></p>
+          <img style="height:30rem;max-width:45rem" src="data:sub/<%=sub.img.contentType%>;base64,
+                                              <%=sub.img.data.toString('base64')%>">
+                                              <hr>
+          <button type="button" class="btn btn-success">Download</button>
+          <hr>    
+        <% }) %>
+      </div>
+     
+    </div>
+  
+</div>
+
+ 
+
+<%- include("../partials/admin-footer.ejs"); -%>

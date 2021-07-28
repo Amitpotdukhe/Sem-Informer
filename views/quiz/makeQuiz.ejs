@@ -1,0 +1,19 @@
+<%- include("../partials/admin-header.ejs"); -%>
+<div class="container">
+  <form action="/makeQuiz" method="post">
+    <div class="form-floating mb-3">
+      <label for="floatingInput">Subject Name</label>
+      </div>
+
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control border" id="exampleInputPassword1">
+        <label for="exampleInputPassword1" class="form-label ">Time</label>
+        <input type="text" name="time" class="form-control border" id="exampleInputPassword1">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <hr>
+  </div>x
+
+<%- include("../partials/admin-footer.ejs"); -%>

@@ -1,0 +1,14 @@
+<%- include("../partials/classes-header.ejs"); -%>
+<div class="container">
+    <h3> Available Quiz  </h3>
+    <hr>
+    <h4> <a href="/demo"> Demo Quiz </a></h4>
+    <hr>
+    <% items.forEach((item) => { %>
+      <h4> <a href="/give-quiz"> <%= item.quizName %> </a></h4>
+      <hr>
+    <%})%>
+
+
+</div>
+<%- include("../partials/admin-footer.ejs"); -%>

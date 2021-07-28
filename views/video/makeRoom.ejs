@@ -1,0 +1,19 @@
+<%- include("../partials/admin-header.ejs"); -%>
+  <div class="container">
+    <h3>Make Room</h3>
+    <hr>
+    <div class="row">
+      <div class="col-md-4">
+        <form action="/makeRoom" method="post">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Subject:</label>
+            <input type="text" class="form-control border-bottom" id="exampleInputEmail1" name="subject" aria-describedby="emailHelp">
+            <button type="submit" href="/meet" class="btn btn-primary">Create</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<%- include("../partials/admin-footer.ejs"); -%>

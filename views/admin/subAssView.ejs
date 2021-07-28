@@ -1,0 +1,12 @@
+<%- include("../partials/admin-header.ejs"); -%>
+<div class="container">
+ <% items.forEach(item=>{ %>
+        <h3> <a href="/Ass-Sub/<%= item._id %>">Subject: <%= item.name %> </a> </h3>
+        <h4> <%= item.desc %></h4>
+
+
+        <hr>
+ <% }) %>
+</div>
+
+<%- include("../partials/admin-footer.ejs"); -%>
