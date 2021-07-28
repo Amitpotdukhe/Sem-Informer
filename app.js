@@ -25,6 +25,6 @@ app.get('/',(req,res)=>{
     res.render('home')
 })
 
-app.listen(4000, function() {
+app.listen(process.env.PORT || 4000, function() {
     console.log("server is on")
 })
