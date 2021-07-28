@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/Sem-Informer", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect("mongodb+srv://Amit:Jaggy@007@seminformer.pnvwk.mongodb.net/seminformer?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 var imageSchema = new mongoose.Schema({
     name: {type: String, required: true},
     desc: {type: String, required: true},
